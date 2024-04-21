@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -84,6 +84,11 @@ canvas {
   }
   50% {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+@media (max-width: 720px) {
+  .bg {
+    background-image: url("./img//images_11zon.webp");
   }
 }
 .flowers {
